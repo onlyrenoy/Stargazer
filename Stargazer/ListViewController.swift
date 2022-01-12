@@ -8,13 +8,14 @@
 import UIKit
 
 class ListViewController: UIViewController {
-    var ownerName: String?
-    @IBOutlet weak var tableView: UITableView!
     
+    
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
     
     var stargazers: [StarGazer]?
     var aTitle: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

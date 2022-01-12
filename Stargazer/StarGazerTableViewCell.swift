@@ -14,13 +14,12 @@ class StarGazerTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
-
+    //TODO: remove from list as well
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
     func configureCell(avatarURL: String?, username: String?) {
@@ -32,6 +31,7 @@ class StarGazerTableViewCell: UITableViewCell {
         }
     }
     
+    //TODO: Provare a gestire da Networking
     func getAvatar(avatarUrl: String?) {
         if let avatarUrl = avatarUrl, let url = URL(string: avatarUrl) {
             URLSession.shared.dataTask(with: url) { data, response, error in

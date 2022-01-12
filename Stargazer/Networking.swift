@@ -15,12 +15,11 @@ class Networking {
     func setAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-//        self.present(alert, animated: true, completion: nil)
         UIApplication.shared.windows.last?.rootViewController?.present(alert, animated: true, completion: nil)
     }
     
+    //TODO: gestire pagination
     func getStargazers(owner: String, repositoryName: String, closure: @escaping ([StarGazer]?) -> Void) {
-        //
         if let url = URL(string: "https://api.github.com/repos/\(owner)/\(repositoryName)/stargazers?per_page=30&page=0") {
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                 if error == nil {
