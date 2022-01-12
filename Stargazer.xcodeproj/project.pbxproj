@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D78D0C13278CC5F000BD4572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D0C12278CC5F000BD4572 /* AppDelegate.swift */; };
+		D78D0C15278CC5F000BD4572 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D0C14278CC5F000BD4572 /* SceneDelegate.swift */; };
+		D78D0C17278CC5F000BD4572 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D0C16278CC5F000BD4572 /* ViewController.swift */; };
+		D78D0C1A278CC5F000BD4572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78D0C18278CC5F000BD4572 /* Main.storyboard */; };
+		D78D0C1C278CC5F400BD4572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D78D0C1B278CC5F400BD4572 /* Assets.xcassets */; };
+		D78D0C1F278CC5F400BD4572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78D0C1D278CC5F400BD4572 /* LaunchScreen.storyboard */; };
+		D796683E278EE1060072ED8D /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D796683D278EE1060072ED8D /* Networking.swift */; };
+		D7966840278EE1330072ED8D /* GitOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D796683F278EE1330072ED8D /* GitOwner.swift */; };
+		D7966842278EE17A0072ED8D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7966841278EE17A0072ED8D /* ListViewController.swift */; };
+		D7966844278EE89A0072ED8D /* StarGazerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7966843278EE89A0072ED8D /* StarGazerTableViewCell.swift */; };
+		D7966846278EE8CA0072ED8D /* StarGazerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7966845278EE8CA0072ED8D /* StarGazerTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D78D0C0F278CC5F000BD4572 /* Stargazer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stargazer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78D0C12278CC5F000BD4572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D78D0C14278CC5F000BD4572 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D78D0C16278CC5F000BD4572 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D78D0C19278CC5F000BD4572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D78D0C1B278CC5F400BD4572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D78D0C1E278CC5F400BD4572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D78D0C20278CC5F400BD4572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D796683D278EE1060072ED8D /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		D796683F278EE1330072ED8D /* GitOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitOwner.swift; sourceTree = "<group>"; };
+		D7966841278EE17A0072ED8D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D7966843278EE89A0072ED8D /* StarGazerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarGazerTableViewCell.swift; sourceTree = "<group>"; };
+		D7966845278EE8CA0072ED8D /* StarGazerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarGazerTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D78D0C0C278CC5F000BD4572 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D78D0C06278CC5EF00BD4572 = {
+			isa = PBXGroup;
+			children = (
+				D78D0C11278CC5F000BD4572 /* Stargazer */,
+				D78D0C10278CC5F000BD4572 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D78D0C10278CC5F000BD4572 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D78D0C0F278CC5F000BD4572 /* Stargazer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D78D0C11278CC5F000BD4572 /* Stargazer */ = {
+			isa = PBXGroup;
+			children = (
+				D78D0C12278CC5F000BD4572 /* AppDelegate.swift */,
+				D78D0C14278CC5F000BD4572 /* SceneDelegate.swift */,
+				D78D0C16278CC5F000BD4572 /* ViewController.swift */,
+				D796683F278EE1330072ED8D /* GitOwner.swift */,
+				D7966841278EE17A0072ED8D /* ListViewController.swift */,
+				D796683D278EE1060072ED8D /* Networking.swift */,
+				D7966843278EE89A0072ED8D /* StarGazerTableViewCell.swift */,
+				D7966845278EE8CA0072ED8D /* StarGazerTableViewCell.xib */,
+				D78D0C18278CC5F000BD4572 /* Main.storyboard */,
+				D78D0C1B278CC5F400BD4572 /* Assets.xcassets */,
+				D78D0C1D278CC5F400BD4572 /* LaunchScreen.storyboard */,
+				D78D0C20278CC5F400BD4572 /* Info.plist */,
+			);
+			path = Stargazer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D78D0C0E278CC5F000BD4572 /* Stargazer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D78D0C23278CC5F400BD4572 /* Build configuration list for PBXNativeTarget "Stargazer" */;
+			buildPhases = (
+				D78D0C0B278CC5F000BD4572 /* Sources */,
+				D78D0C0C278CC5F000BD4572 /* Frameworks */,
+				D78D0C0D278CC5F000BD4572 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stargazer;
+			productName = Stargazer;
+			productReference = D78D0C0F278CC5F000BD4572 /* Stargazer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D78D0C07278CC5EF00BD4572 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					D78D0C0E278CC5F000BD4572 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = D78D0C0A278CC5EF00BD4572 /* Build configuration list for PBXProject "Stargazer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D78D0C06278CC5EF00BD4572;
+			productRefGroup = D78D0C10278CC5F000BD4572 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D78D0C0E278CC5F000BD4572 /* Stargazer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D78D0C0D278CC5F000BD4572 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D78D0C1F278CC5F400BD4572 /* LaunchScreen.storyboard in Resources */,
+				D7966846278EE8CA0072ED8D /* StarGazerTableViewCell.xib in Resources */,
+				D78D0C1C278CC5F400BD4572 /* Assets.xcassets in Resources */,
+				D78D0C1A278CC5F000BD4572 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D78D0C0B278CC5F000BD4572 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7966840278EE1330072ED8D /* GitOwner.swift in Sources */,
+				D78D0C17278CC5F000BD4572 /* ViewController.swift in Sources */,
+				D7966842278EE17A0072ED8D /* ListViewController.swift in Sources */,
+				D78D0C13278CC5F000BD4572 /* AppDelegate.swift in Sources */,
+				D78D0C15278CC5F000BD4572 /* SceneDelegate.swift in Sources */,
+				D796683E278EE1060072ED8D /* Networking.swift in Sources */,
+				D7966844278EE89A0072ED8D /* StarGazerTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D78D0C18278CC5F000BD4572 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D78D0C19278CC5F000BD4572 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D78D0C1D278CC5F400BD4572 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D78D0C1E278CC5F400BD4572 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D78D0C21278CC5F400BD4572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D78D0C22278CC5F400BD4572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D78D0C24278CC5F400BD4572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K87CQB5KVW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stargazer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renoy.Stargazer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D78D0C25278CC5F400BD4572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K87CQB5KVW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stargazer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renoy.Stargazer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D78D0C0A278CC5EF00BD4572 /* Build configuration list for PBXProject "Stargazer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78D0C21278CC5F400BD4572 /* Debug */,
+				D78D0C22278CC5F400BD4572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D78D0C23278CC5F400BD4572 /* Build configuration list for PBXNativeTarget "Stargazer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78D0C24278CC5F400BD4572 /* Debug */,
+				D78D0C25278CC5F400BD4572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D78D0C07278CC5EF00BD4572 /* Project object */;
+}
