@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="teX-o9-cLA">
-                                <rect key="frame" x="20" y="383" width="374" height="130"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="teX-o9-cLA">
+                                <rect key="frame" x="20" y="288" width="374" height="120"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Owner" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dwG-NL-eKk">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
@@ -26,21 +26,21 @@
                                             <constraint firstAttribute="height" constant="55" id="uKV-uG-GKs"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repository" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yrl-Ka-mCD">
-                                        <rect key="frame" x="0.0" y="75" width="374" height="55"/>
+                                        <rect key="frame" x="0.0" y="65" width="374" height="55"/>
                                         <accessibility key="accessibilityConfiguration" identifier="repositoryLabel"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="qAU-OG-HYA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="name"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJB-Pj-u3u">
-                                <rect key="frame" x="20" y="778" width="374" height="64"/>
+                                <rect key="frame" x="20" y="428" width="374" height="64"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <accessibility key="accessibilityConfiguration" identifier="searchButton"/>
                                 <constraints>
@@ -57,13 +57,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XJB-Pj-u3u" secondAttribute="trailing" constant="20" id="2ET-DO-diK"/>
-                            <constraint firstItem="XJB-Pj-u3u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DVP-D6-sTT"/>
                             <constraint firstItem="teX-o9-cLA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LVV-ty-71D"/>
-                            <constraint firstItem="teX-o9-cLA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Tmq-3U-2Be"/>
-                            <constraint firstItem="XJB-Pj-u3u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Uex-KO-AKo"/>
+                            <constraint firstItem="XJB-Pj-u3u" firstAttribute="top" secondItem="teX-o9-cLA" secondAttribute="bottom" constant="20" id="R3g-UJ-cP5"/>
+                            <constraint firstItem="teX-o9-cLA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="Tmq-3U-2Be"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="teX-o9-cLA" secondAttribute="trailing" constant="20" id="Yan-wI-T0Q"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XJB-Pj-u3u" secondAttribute="bottom" constant="20" id="mMp-dQ-8Li"/>
+                            <constraint firstItem="XJB-Pj-u3u" firstAttribute="trailing" secondItem="teX-o9-cLA" secondAttribute="trailing" id="mr9-CF-oSy"/>
+                            <constraint firstItem="XJB-Pj-u3u" firstAttribute="leading" secondItem="teX-o9-cLA" secondAttribute="leading" id="uYQ-Kh-js6"/>
                         </constraints>
                     </view>
                     <connections>

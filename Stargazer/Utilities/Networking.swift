@@ -27,7 +27,6 @@ class Networking {
         self.page = pagination ? page + 1 : 1
         
         if let url = URL(string: "https://api.github.com/repos/\(owner)/\(repositoryName)/stargazers?per_page=30&page=\(page)") {
-            print("Numero della pagina: \(self.page) \nURL:\(url.absoluteString)")
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                 
                 if let statusCode = (response as? HTTPURLResponse)?.statusCode, statusCode >= 400 {
@@ -46,13 +45,12 @@ class Networking {
                         }
                     }
                 } else {
-                    self.setAlert(title: "Attenzione", message: "Cant find repo")
-                    print("JSONSerialization error:", error!)
+                    self.setAlert(title: "Attention", message: "Cant find repo")
                 }
             }
             task.resume()
         } else {
-            self.setAlert(title: "Attenzione", message: "Cant find repo")
+            self.setAlert(title: "Attention", message: "Cant find repo")
         }
     }
 }

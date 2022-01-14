@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D76A47192792208A0022AD34 /* GitErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A47182792208A0022AD34 /* GitErrors.swift */; };
+		D76A4725279226430022AD34 /* StargazerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A4724279226430022AD34 /* StargazerUITests.swift */; };
+		D76A4727279226430022AD34 /* StargazerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A4726279226430022AD34 /* StargazerUITestsLaunchTests.swift */; };
 		D78D0C13278CC5F000BD4572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D0C12278CC5F000BD4572 /* AppDelegate.swift */; };
 		D78D0C15278CC5F000BD4572 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D0C14278CC5F000BD4572 /* SceneDelegate.swift */; };
 		D78D0C17278CC5F000BD4572 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D0C16278CC5F000BD4572 /* ViewController.swift */; };
@@ -21,8 +23,21 @@
 		D7966846278EE8CA0072ED8D /* StarGazerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7966845278EE8CA0072ED8D /* StarGazerTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D76A4728279226430022AD34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D78D0C07278CC5EF00BD4572 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D78D0C0E278CC5F000BD4572;
+			remoteInfo = Stargazer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		D76A47182792208A0022AD34 /* GitErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitErrors.swift; sourceTree = "<group>"; };
+		D76A4722279226430022AD34 /* StargazerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76A4724279226430022AD34 /* StargazerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerUITests.swift; sourceTree = "<group>"; };
+		D76A4726279226430022AD34 /* StargazerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D78D0C0F278CC5F000BD4572 /* Stargazer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stargazer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78D0C12278CC5F000BD4572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D78D0C14278CC5F000BD4572 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +54,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D76A471F279226430022AD34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D78D0C0C278CC5F000BD4572 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,10 +106,20 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		D76A4723279226430022AD34 /* StargazerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D76A4724279226430022AD34 /* StargazerUITests.swift */,
+				D76A4726279226430022AD34 /* StargazerUITestsLaunchTests.swift */,
+			);
+			path = StargazerUITests;
+			sourceTree = "<group>";
+		};
 		D78D0C06278CC5EF00BD4572 = {
 			isa = PBXGroup;
 			children = (
 				D78D0C11278CC5F000BD4572 /* Stargazer */,
+				D76A4723279226430022AD34 /* StargazerUITests */,
 				D78D0C10278CC5F000BD4572 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				D78D0C0F278CC5F000BD4572 /* Stargazer.app */,
+				D76A4722279226430022AD34 /* StargazerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +153,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D76A4721279226430022AD34 /* StargazerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76A472A279226430022AD34 /* Build configuration list for PBXNativeTarget "StargazerUITests" */;
+			buildPhases = (
+				D76A471E279226430022AD34 /* Sources */,
+				D76A471F279226430022AD34 /* Frameworks */,
+				D76A4720279226430022AD34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D76A4729279226430022AD34 /* PBXTargetDependency */,
+			);
+			name = StargazerUITests;
+			productName = StargazerUITests;
+			productReference = D76A4722279226430022AD34 /* StargazerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		D78D0C0E278CC5F000BD4572 /* Stargazer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D78D0C23278CC5F400BD4572 /* Build configuration list for PBXNativeTarget "Stargazer" */;
@@ -147,6 +198,10 @@
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					D76A4721279226430022AD34 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = D78D0C0E278CC5F000BD4572;
+					};
 					D78D0C0E278CC5F000BD4572 = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -166,11 +221,19 @@
 			projectRoot = "";
 			targets = (
 				D78D0C0E278CC5F000BD4572 /* Stargazer */,
+				D76A4721279226430022AD34 /* StargazerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D76A4720279226430022AD34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D78D0C0D278CC5F000BD4572 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +248,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D76A471E279226430022AD34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76A4727279226430022AD34 /* StargazerUITestsLaunchTests.swift in Sources */,
+				D76A4725279226430022AD34 /* StargazerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D78D0C0B278CC5F000BD4572 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,6 +273,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D76A4729279226430022AD34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D78D0C0E278CC5F000BD4572 /* Stargazer */;
+			targetProxy = D76A4728279226430022AD34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D78D0C18278CC5F000BD4572 /* Main.storyboard */ = {
@@ -222,6 +302,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D76A472B279226430022AD34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K87CQB5KVW;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renoy.StargazerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Stargazer;
+			};
+			name = Debug;
+		};
+		D76A472C279226430022AD34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K87CQB5KVW;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renoy.StargazerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Stargazer;
+			};
+			name = Release;
+		};
 		D78D0C21278CC5F400BD4572 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -397,6 +521,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D76A472A279226430022AD34 /* Build configuration list for PBXNativeTarget "StargazerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76A472B279226430022AD34 /* Debug */,
+				D76A472C279226430022AD34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D78D0C0A278CC5EF00BD4572 /* Build configuration list for PBXProject "Stargazer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

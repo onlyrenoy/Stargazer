@@ -14,9 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //tmp
-        ownerTextField.text = "octocat"
-        repositoryTextField.text = "spoon-knife"
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -34,10 +32,15 @@ class ViewController: UIViewController {
         // TODO: add error handling
         if ownerTextField.text?.isEmpty != true, repositoryTextField.text?.isEmpty != true {
             Networking.shared.getStargazers(pagination: false, owner: ownerTextField.text ?? "", repositoryName: repositoryTextField.text ?? "") { stargazers in
-                self.performSegue(withIdentifier: "toList", sender: stargazers)//stargazers
+                if stargazers?.isEmpty == true {
+                    Networking.shared.setAlert(title: "Attention", message: "this repository doesn't have stargazers")
+                } else {
+                    self.performSegue(withIdentifier: "toList", sender: stargazers)
+                }
+                
             }
         } else {
-            Networking.shared.setAlert(title: "Attenzione", message: "Compilare tutti i campi")
+            Networking.shared.setAlert(title: "Attention", message: "Compilare tutti i campi")
         }
     }
 }
