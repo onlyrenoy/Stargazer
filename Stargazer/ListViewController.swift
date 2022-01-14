@@ -15,6 +15,9 @@ class ListViewController: UIViewController {
     
     var stargazers: [StarGazer]?
     var aTitle: String?
+    var repositoryName: String?
+    var gitOwner: String?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +29,13 @@ class ListViewController: UIViewController {
         
         titleLabel.text = aTitle
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
 }
 
-extension ListViewController: UITableViewDelegate, UITableViewDataSource {
+extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.stargazers?.count ?? 0
     }
@@ -44,6 +51,18 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let position = scrollView.contentOffset.y
+
+        if position > self.tableView.contentSize.height - 100 - scrollView.frame.height {
+            Networking.shared.getStargazers(pagination: true, owner: gitOwner ?? "", repositoryName: repositoryName ?? "") { sg in
+                self.stargazers?.append(contentsOf: sg ?? [])
+                    self.tableView.reloadData()
+            }
+            
+        }
     }
 }
 

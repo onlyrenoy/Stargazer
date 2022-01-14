@@ -20,3 +20,8 @@ class StarGazer: Decodable {
     var login: String?
     var avatar_url: String?
 }
+
+class GitErrors: Decodable {
+    var message: String?
+    var documentation_url: String?
+}

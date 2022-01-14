@@ -88,7 +88,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mDq-RG-PEf">
-                                <rect key="frame" x="0.0" y="58" width="414" height="750"/>
+                                <rect key="frame" x="0.0" y="58" width="414" height="784"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -98,7 +98,7 @@
                             <constraint firstItem="vsv-2G-6wx" firstAttribute="top" secondItem="qlu-3o-FAd" secondAttribute="top" constant="10" id="AWE-Gt-U5E"/>
                             <constraint firstItem="qlu-3o-FAd" firstAttribute="trailing" secondItem="vsv-2G-6wx" secondAttribute="trailing" constant="20" id="KUc-oi-Bjy"/>
                             <constraint firstItem="vsv-2G-6wx" firstAttribute="leading" secondItem="qlu-3o-FAd" secondAttribute="leading" constant="20" id="Pd0-Oa-XMc"/>
-                            <constraint firstItem="qlu-3o-FAd" firstAttribute="bottom" secondItem="mDq-RG-PEf" secondAttribute="bottom" id="R0u-Yw-UCD"/>
+                            <constraint firstAttribute="bottom" secondItem="mDq-RG-PEf" secondAttribute="bottom" id="R0u-Yw-UCD"/>
                             <constraint firstItem="mDq-RG-PEf" firstAttribute="top" secondItem="vsv-2G-6wx" secondAttribute="bottom" id="puj-Wu-n0O"/>
                             <constraint firstItem="qlu-3o-FAd" firstAttribute="trailing" secondItem="mDq-RG-PEf" secondAttribute="trailing" id="rdk-up-ryq"/>
                             <constraint firstItem="mDq-RG-PEf" firstAttribute="leading" secondItem="qlu-3o-FAd" secondAttribute="leading" id="vSY-1u-RVg"/>

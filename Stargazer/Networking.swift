@@ -11,6 +11,8 @@ import UIKit
 class Networking {
     static let shared = Networking()
     
+    private var page: Int = 0
+    
     //TODO: add alerts
     func setAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
@@ -19,13 +21,27 @@ class Networking {
     }
     
     //TODO: gestire pagination
-    func getStargazers(owner: String, repositoryName: String, closure: @escaping ([StarGazer]?) -> Void) {
-        if let url = URL(string: "https://api.github.com/repos/\(owner)/\(repositoryName)/stargazers?per_page=30&page=0") {
+    
+    func getStargazers(pagination: Bool, owner: String, repositoryName: String, closure: @escaping ([StarGazer]?) -> Void) {
+        var stargazers: [StarGazer] = []
+        self.page = pagination ? page + 1 : 0
+        
+        if let url = URL(string: "https://api.github.com/repos/\(owner)/\(repositoryName)/stargazers?per_page=30&page=\(page)") {
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+                
+                if let statusCode = (response as? HTTPURLResponse)?.statusCode, statusCode >= 400 {
+                    if let data = data, let decodedResponse = try? JSONDecoder().decode(GitErrors.self, from: data) {
+                        DispatchQueue.main.async {
+                            self.setAlert(title: "Error", message: decodedResponse.message ?? "Some Error")
+                        }
+                    }
+                }
                 if error == nil {
                     if let data = data, let decodedResponse = try? JSONDecoder().decode([StarGazer].self, from: data) {
+                        stargazers.append(contentsOf: decodedResponse)
+                        
                         DispatchQueue.main.async {
-                            closure(decodedResponse)
+                            closure(stargazers)
                         }
                     }
                 } else {
