@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D76A47192792208A0022AD34 /* GitErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A47182792208A0022AD34 /* GitErrors.swift */; };
 		D78D0C13278CC5F000BD4572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D0C12278CC5F000BD4572 /* AppDelegate.swift */; };
 		D78D0C15278CC5F000BD4572 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D0C14278CC5F000BD4572 /* SceneDelegate.swift */; };
 		D78D0C17278CC5F000BD4572 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D0C16278CC5F000BD4572 /* ViewController.swift */; };
@@ -14,13 +15,14 @@
 		D78D0C1C278CC5F400BD4572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D78D0C1B278CC5F400BD4572 /* Assets.xcassets */; };
 		D78D0C1F278CC5F400BD4572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78D0C1D278CC5F400BD4572 /* LaunchScreen.storyboard */; };
 		D796683E278EE1060072ED8D /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D796683D278EE1060072ED8D /* Networking.swift */; };
-		D7966840278EE1330072ED8D /* GitOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D796683F278EE1330072ED8D /* GitOwner.swift */; };
+		D7966840278EE1330072ED8D /* Stargazer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D796683F278EE1330072ED8D /* Stargazer.swift */; };
 		D7966842278EE17A0072ED8D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7966841278EE17A0072ED8D /* ListViewController.swift */; };
 		D7966844278EE89A0072ED8D /* StarGazerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7966843278EE89A0072ED8D /* StarGazerTableViewCell.swift */; };
 		D7966846278EE8CA0072ED8D /* StarGazerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7966845278EE8CA0072ED8D /* StarGazerTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D76A47182792208A0022AD34 /* GitErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitErrors.swift; sourceTree = "<group>"; };
 		D78D0C0F278CC5F000BD4572 /* Stargazer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stargazer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78D0C12278CC5F000BD4572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D78D0C14278CC5F000BD4572 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +32,7 @@
 		D78D0C1E278CC5F400BD4572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D78D0C20278CC5F400BD4572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D796683D278EE1060072ED8D /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		D796683F278EE1330072ED8D /* GitOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitOwner.swift; sourceTree = "<group>"; };
+		D796683F278EE1330072ED8D /* Stargazer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stargazer.swift; sourceTree = "<group>"; };
 		D7966841278EE17A0072ED8D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		D7966843278EE89A0072ED8D /* StarGazerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarGazerTableViewCell.swift; sourceTree = "<group>"; };
 		D7966845278EE8CA0072ED8D /* StarGazerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarGazerTableViewCell.xib; sourceTree = "<group>"; };
@@ -47,6 +49,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D76A471A279220960022AD34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D796683F278EE1330072ED8D /* Stargazer.swift */,
+				D76A47182792208A0022AD34 /* GitErrors.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D76A471B279220B10022AD34 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D78D0C16278CC5F000BD4572 /* ViewController.swift */,
+				D7966841278EE17A0072ED8D /* ListViewController.swift */,
+				D76A471C279220BD0022AD34 /* Cells */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D76A471C279220BD0022AD34 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D7966843278EE89A0072ED8D /* StarGazerTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D76A471D279220C90022AD34 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D796683D278EE1060072ED8D /* Networking.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		D78D0C06278CC5EF00BD4572 = {
 			isa = PBXGroup;
 			children = (
@@ -68,11 +105,9 @@
 			children = (
 				D78D0C12278CC5F000BD4572 /* AppDelegate.swift */,
 				D78D0C14278CC5F000BD4572 /* SceneDelegate.swift */,
-				D78D0C16278CC5F000BD4572 /* ViewController.swift */,
-				D796683F278EE1330072ED8D /* GitOwner.swift */,
-				D7966841278EE17A0072ED8D /* ListViewController.swift */,
-				D796683D278EE1060072ED8D /* Networking.swift */,
-				D7966843278EE89A0072ED8D /* StarGazerTableViewCell.swift */,
+				D76A471B279220B10022AD34 /* ViewControllers */,
+				D76A471A279220960022AD34 /* Models */,
+				D76A471D279220C90022AD34 /* Utilities */,
 				D7966845278EE8CA0072ED8D /* StarGazerTableViewCell.xib */,
 				D78D0C18278CC5F000BD4572 /* Main.storyboard */,
 				D78D0C1B278CC5F400BD4572 /* Assets.xcassets */,
@@ -154,9 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7966840278EE1330072ED8D /* GitOwner.swift in Sources */,
+				D7966840278EE1330072ED8D /* Stargazer.swift in Sources */,
 				D78D0C17278CC5F000BD4572 /* ViewController.swift in Sources */,
 				D7966842278EE17A0072ED8D /* ListViewController.swift in Sources */,
+				D76A47192792208A0022AD34 /* GitErrors.swift in Sources */,
 				D78D0C13278CC5F000BD4572 /* AppDelegate.swift in Sources */,
 				D78D0C15278CC5F000BD4572 /* SceneDelegate.swift in Sources */,
 				D796683E278EE1060072ED8D /* Networking.swift in Sources */,

@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toList" {
-            if let list = segue.destination as? ListViewController, let sender = sender as? [StarGazer]? {
+            if let list = segue.destination as? ListViewController, let sender = sender as? [Stargazer]? {
                 list.aTitle = "\(ownerTextField.text ?? "") star gazers"
                 list.repositoryName = repositoryTextField.text
                 list.gitOwner = ownerTextField.text

@@ -22,8 +22,8 @@ class Networking {
     
     //TODO: gestire pagination
     
-    func getStargazers(pagination: Bool, owner: String, repositoryName: String, closure: @escaping ([StarGazer]?) -> Void) {
-        var stargazers: [StarGazer] = []
+    func getStargazers(pagination: Bool, owner: String, repositoryName: String, closure: @escaping ([Stargazer]?) -> Void) {
+        var stargazers: [Stargazer] = []
         self.page = pagination ? page + 1 : 1
         
         if let url = URL(string: "https://api.github.com/repos/\(owner)/\(repositoryName)/stargazers?per_page=30&page=\(page)") {
@@ -38,7 +38,7 @@ class Networking {
                     }
                 }
                 if error == nil {
-                    if let data = data, let decodedResponse = try? JSONDecoder().decode([StarGazer].self, from: data) {
+                    if let data = data, let decodedResponse = try? JSONDecoder().decode([Stargazer].self, from: data) {
                         stargazers.append(contentsOf: decodedResponse)
                         
                         DispatchQueue.main.async {

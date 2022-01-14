@@ -37,6 +37,7 @@
                     <constraint firstItem="T2g-A4-nsF" firstAttribute="leading" secondItem="6wr-8W-UMv" secondAttribute="leading" id="zA3-cA-8Y6"/>
                 </constraints>
             </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="stargazerCell"/>
             <connections>
                 <outlet property="avatarImageView" destination="T2g-A4-nsF" id="MAC-xI-Tb3"/>
                 <outlet property="usernameLabel" destination="ADx-St-dzu" id="56S-aa-Vjn"/>

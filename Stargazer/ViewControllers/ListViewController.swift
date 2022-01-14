@@ -13,7 +13,7 @@ class ListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
     
-    var stargazers: [StarGazer]?
+    var stargazers: [Stargazer]?
     var aTitle: String?
     var repositoryName: String?
     var gitOwner: String?

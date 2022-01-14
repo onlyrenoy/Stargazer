@@ -21,6 +21,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Owner" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dwG-NL-eKk">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="ownerLabel"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="uKV-uG-GKs"/>
                                         </constraints>
@@ -29,6 +30,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repository" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yrl-Ka-mCD">
                                         <rect key="frame" x="0.0" y="75" width="374" height="55"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="repositoryLabel"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="qAU-OG-HYA"/>
                                         </constraints>
@@ -40,12 +42,13 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJB-Pj-u3u">
                                 <rect key="frame" x="20" y="778" width="374" height="64"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="searchButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Bgp-7s-mjk"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="linkColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Search"/>
                                 <connections>
                                     <action selector="searchRepositoryTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J5J-5E-phO"/>
                                 </connections>
