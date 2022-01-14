@@ -40,6 +40,19 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         return self.stargazers?.count ?? 0
     }
     
+    func addLoadingSpinner() -> UIView {
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 100))
+        
+        let spinner = UIActivityIndicatorView()
+        spinner.center = footerView.center
+        
+        footerView.addSubview(spinner)
+        spinner.startAnimating()
+        
+        return footerView
+        
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "stargazerCell", for: indexPath) as? StarGazerTableViewCell {
             cell.configureCell(avatarURL: stargazers?[indexPath.item].avatar_url ?? "", username: self.stargazers?[indexPath.item].login ?? "")
@@ -53,15 +66,22 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         return 100.0
     }
     
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let position = scrollView.contentOffset.y
 
-        if position > self.tableView.contentSize.height - 100 - scrollView.frame.height {
+        if position > self.tableView.contentSize.height + 100 - scrollView.frame.height {
+            self.tableView.tableFooterView = addLoadingSpinner()
+            tableView.isScrollEnabled = false
             Networking.shared.getStargazers(pagination: true, owner: gitOwner ?? "", repositoryName: repositoryName ?? "") { sg in
-                self.stargazers?.append(contentsOf: sg ?? [])
+                DispatchQueue.main.async {
+                    self.tableView.tableFooterView = nil
+                    self.stargazers?.append(contentsOf: sg ?? [])
                     self.tableView.reloadData()
+                }
             }
-            
+        } else {
+            tableView.isScrollEnabled = true
         }
     }
 }

@@ -11,7 +11,7 @@ import UIKit
 class Networking {
     static let shared = Networking()
     
-    private var page: Int = 0
+    private var page: Int = 1
     
     //TODO: add alerts
     func setAlert(title: String, message: String) {
@@ -24,9 +24,10 @@ class Networking {
     
     func getStargazers(pagination: Bool, owner: String, repositoryName: String, closure: @escaping ([StarGazer]?) -> Void) {
         var stargazers: [StarGazer] = []
-        self.page = pagination ? page + 1 : 0
+        self.page = pagination ? page + 1 : 1
         
         if let url = URL(string: "https://api.github.com/repos/\(owner)/\(repositoryName)/stargazers?per_page=30&page=\(page)") {
+            print("Numero della pagina: \(self.page) \nURL:\(url.absoluteString)")
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                 
                 if let statusCode = (response as? HTTPURLResponse)?.statusCode, statusCode >= 400 {
