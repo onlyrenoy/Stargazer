@@ -46,7 +46,7 @@ class RepositorySearchViewController: UIViewController {
                 
             }
         } else {
-            Networking.shared.setAlert(title: "Attention", message: "Compilare tutti i campi")
+            Networking.shared.setAlert(title: "Attention", message: "fill in the missing fields")
         }
     }
 }
