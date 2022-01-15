@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RepositorySearchViewController.swift
 //  Stargazer
 //
 //  Created by Renoy Chowdhury on 10/01/22.
@@ -7,20 +7,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    //TODO: Keyboard under textfield
+class RepositorySearchViewController: UIViewController {
     @IBOutlet weak var ownerTextField: UITextField!
     @IBOutlet weak var repositoryTextField: UITextField!
+    @IBOutlet weak var searchButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        searchButton.layer.cornerRadius = 8
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toList" {
             if let list = segue.destination as? ListViewController, let sender = sender as? [Stargazer]? {
-                list.aTitle = "\(ownerTextField.text ?? "") star gazers"
+                list.aTitle = "\(repositoryTextField.text?.capitalized ?? "") stargazers"
                 list.repositoryName = repositoryTextField.text
                 list.gitOwner = ownerTextField.text
                 list.stargazers = sender

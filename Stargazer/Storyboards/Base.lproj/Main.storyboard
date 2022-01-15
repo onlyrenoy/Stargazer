@@ -8,31 +8,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Repository Search View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stargazer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RepositorySearchViewController" customModule="Stargazer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="teX-o9-cLA">
-                                <rect key="frame" x="20" y="288" width="374" height="120"/>
+                                <rect key="frame" x="20" y="283" width="374" height="130"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Owner" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dwG-NL-eKk">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
                                         <accessibility key="accessibilityConfiguration" identifier="ownerLabel"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="55" id="uKV-uG-GKs"/>
+                                            <constraint firstAttribute="height" constant="60" id="uKV-uG-GKs"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" textContentType="name"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repository" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yrl-Ka-mCD">
-                                        <rect key="frame" x="0.0" y="65" width="374" height="55"/>
+                                        <rect key="frame" x="0.0" y="70" width="374" height="60"/>
                                         <accessibility key="accessibilityConfiguration" identifier="repositoryLabel"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="55" id="qAU-OG-HYA"/>
+                                            <constraint firstAttribute="height" constant="60" id="qAU-OG-HYA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="name"/>
@@ -40,11 +40,11 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJB-Pj-u3u">
-                                <rect key="frame" x="20" y="428" width="374" height="64"/>
+                                <rect key="frame" x="20" y="433" width="374" height="54"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <accessibility key="accessibilityConfiguration" identifier="searchButton"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="Bgp-7s-mjk"/>
+                                    <constraint firstAttribute="height" constant="54" id="Bgp-7s-mjk"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="linkColor"/>
                                 <state key="normal" title="Button"/>
@@ -68,6 +68,7 @@
                     <connections>
                         <outlet property="ownerTextField" destination="dwG-NL-eKk" id="GdR-9y-Og3"/>
                         <outlet property="repositoryTextField" destination="yrl-Ka-mCD" id="rdH-tZ-PWp"/>
+                        <outlet property="searchButton" destination="XJB-Pj-u3u" id="rlC-dk-JqG"/>
                         <segue destination="Qct-D2-Vhd" kind="show" identifier="toList" id="X8c-yp-msF"/>
                     </connections>
                 </viewController>
@@ -84,13 +85,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsv-2G-6wx">
-                                <rect key="frame" x="20" y="10" width="374" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <rect key="frame" x="20" y="10" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mDq-RG-PEf">
-                                <rect key="frame" x="0.0" y="58" width="414" height="784"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mDq-RG-PEf">
+                                <rect key="frame" x="0.0" y="40" width="414" height="802"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>

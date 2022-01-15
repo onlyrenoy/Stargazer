@@ -15,6 +15,7 @@ class StarGazerTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        avatarImageView.layer.cornerRadius = avatarImageView.frame.width / 2
     }
     //TODO: remove from list as well
     override func setSelected(_ selected: Bool, animated: Bool) {

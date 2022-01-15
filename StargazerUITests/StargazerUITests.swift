@@ -9,7 +9,7 @@ import XCTest
 
 class StargazerUITests: XCTestCase {
 
-    func testSearchAndSwipe() throws {        
+    func testSearchAndSwipe() throws {
         let app = XCUIApplication()
         app.launch()
         app/*@START_MENU_TOKEN@*/.textFields["ownerLabel"]/*[[".textFields[\"Owner\"]",".textFields[\"ownerLabel\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
@@ -49,6 +49,5 @@ class StargazerUITests: XCTestCase {
         
         XCTAssertEqual(app.alerts.element.label, "Error")
         app.alerts.buttons.firstMatch.tap()
-        
     }
 }

@@ -8,33 +8,33 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="stargazerCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="101" id="ugL-Ba-drL" customClass="StarGazerTableViewCell" customModule="Stargazer" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="441" height="101"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="stargazerCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="107" id="ugL-Ba-drL" customClass="StarGazerTableViewCell" customModule="Stargazer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="107"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ugL-Ba-drL" id="6wr-8W-UMv">
-                <rect key="frame" x="0.0" y="0.0" width="441" height="101"/>
+                <rect key="frame" x="0.0" y="0.0" width="441" height="107"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T2g-A4-nsF">
-                        <rect key="frame" x="0.0" y="0.0" width="80" height="101"/>
+                        <rect key="frame" x="6" y="10" width="80" height="87"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="80" id="e9s-iF-vih"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADx-St-dzu">
-                        <rect key="frame" x="100" y="40" width="321" height="21"/>
+                        <rect key="frame" x="106" y="43" width="315" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="T2g-A4-nsF" secondAttribute="bottom" id="6UE-CT-rK3"/>
-                    <constraint firstItem="T2g-A4-nsF" firstAttribute="top" secondItem="6wr-8W-UMv" secondAttribute="top" id="6sj-Xa-MLE"/>
+                    <constraint firstAttribute="bottom" secondItem="T2g-A4-nsF" secondAttribute="bottom" constant="10" id="6UE-CT-rK3"/>
+                    <constraint firstItem="T2g-A4-nsF" firstAttribute="top" secondItem="6wr-8W-UMv" secondAttribute="top" constant="10" id="6sj-Xa-MLE"/>
                     <constraint firstItem="ADx-St-dzu" firstAttribute="leading" secondItem="T2g-A4-nsF" secondAttribute="trailing" constant="20" id="AMm-9E-CeP"/>
                     <constraint firstAttribute="trailing" secondItem="ADx-St-dzu" secondAttribute="trailing" constant="20" id="Vli-Ms-V7i"/>
                     <constraint firstItem="ADx-St-dzu" firstAttribute="centerY" secondItem="T2g-A4-nsF" secondAttribute="centerY" id="gvN-ii-ZNl"/>
-                    <constraint firstItem="T2g-A4-nsF" firstAttribute="leading" secondItem="6wr-8W-UMv" secondAttribute="leading" id="zA3-cA-8Y6"/>
+                    <constraint firstItem="T2g-A4-nsF" firstAttribute="leading" secondItem="6wr-8W-UMv" secondAttribute="leading" constant="6" id="zA3-cA-8Y6"/>
                 </constraints>
             </tableViewCellContentView>
             <accessibility key="accessibilityConfiguration" identifier="stargazerCell"/>
@@ -42,7 +42,7 @@
                 <outlet property="avatarImageView" destination="T2g-A4-nsF" id="MAC-xI-Tb3"/>
                 <outlet property="usernameLabel" destination="ADx-St-dzu" id="56S-aa-Vjn"/>
             </connections>
-            <point key="canvasLocation" x="-223.91304347826087" y="86.049107142857139"/>
+            <point key="canvasLocation" x="-223.91304347826087" y="88.058035714285708"/>
         </tableViewCell>
     </objects>
 </document>

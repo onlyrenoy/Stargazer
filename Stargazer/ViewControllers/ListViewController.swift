@@ -8,8 +8,6 @@
 import UIKit
 
 class ListViewController: UIViewController {
-    
-    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -28,10 +26,6 @@ class ListViewController: UIViewController {
         tableView.register(UINib.init(nibName: "StarGazerTableViewCell", bundle: nil), forCellReuseIdentifier: "stargazerCell")
         
         titleLabel.text = aTitle
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
     }
 }
 

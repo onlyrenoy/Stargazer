@@ -12,7 +12,7 @@
 		D76A4727279226430022AD34 /* StargazerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76A4726279226430022AD34 /* StargazerUITestsLaunchTests.swift */; };
 		D78D0C13278CC5F000BD4572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D0C12278CC5F000BD4572 /* AppDelegate.swift */; };
 		D78D0C15278CC5F000BD4572 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D0C14278CC5F000BD4572 /* SceneDelegate.swift */; };
-		D78D0C17278CC5F000BD4572 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D0C16278CC5F000BD4572 /* ViewController.swift */; };
+		D78D0C17278CC5F000BD4572 /* RepositorySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D0C16278CC5F000BD4572 /* RepositorySearchViewController.swift */; };
 		D78D0C1A278CC5F000BD4572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78D0C18278CC5F000BD4572 /* Main.storyboard */; };
 		D78D0C1C278CC5F400BD4572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D78D0C1B278CC5F400BD4572 /* Assets.xcassets */; };
 		D78D0C1F278CC5F400BD4572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78D0C1D278CC5F400BD4572 /* LaunchScreen.storyboard */; };
@@ -41,7 +41,7 @@
 		D78D0C0F278CC5F000BD4572 /* Stargazer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stargazer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78D0C12278CC5F000BD4572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D78D0C14278CC5F000BD4572 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D78D0C16278CC5F000BD4572 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D78D0C16278CC5F000BD4572 /* RepositorySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchViewController.swift; sourceTree = "<group>"; };
 		D78D0C19278CC5F000BD4572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D78D0C1B278CC5F400BD4572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D78D0C1E278CC5F400BD4572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		D76A471B279220B10022AD34 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D78D0C16278CC5F000BD4572 /* ViewController.swift */,
+				D78D0C16278CC5F000BD4572 /* RepositorySearchViewController.swift */,
 				D7966841278EE17A0072ED8D /* ListViewController.swift */,
 				D76A471C279220BD0022AD34 /* Cells */,
 			);
@@ -94,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				D7966843278EE89A0072ED8D /* StarGazerTableViewCell.swift */,
+				D7966845278EE8CA0072ED8D /* StarGazerTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -141,13 +142,20 @@
 				D76A471B279220B10022AD34 /* ViewControllers */,
 				D76A471A279220960022AD34 /* Models */,
 				D76A471D279220C90022AD34 /* Utilities */,
-				D7966845278EE8CA0072ED8D /* StarGazerTableViewCell.xib */,
-				D78D0C18278CC5F000BD4572 /* Main.storyboard */,
+				D7D5B6C6279313D100E272A0 /* Storyboards */,
 				D78D0C1B278CC5F400BD4572 /* Assets.xcassets */,
-				D78D0C1D278CC5F400BD4572 /* LaunchScreen.storyboard */,
 				D78D0C20278CC5F400BD4572 /* Info.plist */,
 			);
 			path = Stargazer;
+			sourceTree = "<group>";
+		};
+		D7D5B6C6279313D100E272A0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D78D0C18278CC5F000BD4572 /* Main.storyboard */,
+				D78D0C1D278CC5F400BD4572 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7966840278EE1330072ED8D /* Stargazer.swift in Sources */,
-				D78D0C17278CC5F000BD4572 /* ViewController.swift in Sources */,
+				D78D0C17278CC5F000BD4572 /* RepositorySearchViewController.swift in Sources */,
 				D7966842278EE17A0072ED8D /* ListViewController.swift in Sources */,
 				D76A47192792208A0022AD34 /* GitErrors.swift in Sources */,
 				D78D0C13278CC5F000BD4572 /* AppDelegate.swift in Sources */,
